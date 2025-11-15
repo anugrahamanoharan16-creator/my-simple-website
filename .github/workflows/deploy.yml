@@ -2,7 +2,8 @@ name: Deploy Website CI/CD
 
 on:
   push:
-    branches: [main]
+    branches: 
+      - main
 
 permissions:
   contents: read
@@ -37,11 +38,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: pages  # IMPORTANT FIX
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
