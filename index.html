@@ -1,26 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My CI/CD Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Demo – GitHub Actions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+        h3 {
+            text-align: center;
+            color: #555;
+        }
+        ul {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+        .highlight {
+            background: #e9ffe9;
+            padding: 10px;
+            border-left: 4px solid #28a745;
+            margin: 20px 0;
+        }
+        .emoji {
+            font-size: 22px;
+        }
+    </style>
 </head>
 <body>
-    <h1>My CI/CD Demo</h1>
-    <h3>GitHub Actions • GitHub Pages</h3>
 
-    <p>Hello from CI/CD! 🚀</p>
+<div class="container">
+    <h1>🚀 CI/CD Demo Project</h1>
+    <h3>Using GitHub Actions + GitHub Pages</h3>
 
-    <p>This site is automatically deployed using GitHub Actions and GitHub Pages.<br>
-    No local Docker or terminal needed.</p>
+    <div class="highlight">
+        <p><strong>Hello!</strong> This webpage is automatically deployed through a full CI/CD pipeline built with GitHub Actions.</p>
+        <p>No local Docker, no terminal — everything happens in the cloud. 🌐</p>
+    </div>
 
-    <h2>What this project shows</h2>
+    <h2>🔧 What This Project Demonstrates</h2>
     <ul>
-        <li>Automated build & deploy with GitHub Actions</li>
-        <li>Simple static website on GitHub Pages</li>
-        <li>Workflow badge + README for a clean portfolio</li>
+        <li>✔ Automated build & deploy workflow using GitHub Actions</li>
+        <li>✔ Static website hosted on GitHub Pages</li>
+        <li>✔ CI validation before deployment</li>
+        <li>✔ Perfect mini-project for DevOps portfolio</li>
     </ul>
 
-    <p><i>(Your Pages URL appears in Settings → Pages after first successful deploy)</i></p>
+    <h2>📌 How It Works</h2>
+    <p>
+        Every time I push changes to the <strong>main</strong> branch:
+    </p>
+    <ul>
+        <li>GitHub Actions checks out the repo</li>
+        <li>Runs basic validation (CI)</li>
+        <li>Deploys the website to <strong>GitHub Pages (gh-pages branch)</strong></li>
+    </ul>
 
-    <p>Built by Anugraha Manoharan</p>
+    <h2>📄 Project URL</h2>
+    <p>
+        You can find this site's live URL in your GitHub Repository:<br>
+        <strong>Settings → Pages</strong>
+    </p>
+
+    <footer>
+        Built by <strong>Anugraha Manoharan</strong> • DevOps Learner & Cloud Enthusiast ☁️
+    </footer>
+</div>
+
 </body>
 </html>
