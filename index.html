@@ -1,93 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CI/CD Demo — GitHub Actions</title>
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps CI/CD Demo</title>
+<style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      text-align: center;
+        font-family: Arial, sans-serif;
+        background: #f2f6ff;
+        margin: 0;
+        padding: 0;
     }
+
     header {
-      background: #24292e;
-      color: white;
-      padding: 30px 20px;
+        background: #0d47a1;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1px;
     }
-    h1 {
-      margin: 0;
-      font-size: 36px;
+
+    .subtitle {
+        font-size: 16px;
+        opacity: 0.9;
+        margin-top: 8px;
+        font-weight: normal;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
+
+    .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 15px;
     }
+
     .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      margin-bottom: 25px;
-      text-align: left;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
-    ul {
-      margin: 0;
-      padding-left: 20px;
-      line-height: 1.7;
+
+    .card h2 {
+        color: #0d47a1;
+        margin-bottom: 10px;
     }
+
     footer {
-      margin: 30px 0;
-      font-size: 14px;
-      color: #555;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        background: #0d47a1;
+        color: white;
+        font-size: 14px;
     }
-  </style>
+</style>
 </head>
 <body>
 
 <header>
-  <h1>🚀 CI/CD Demo using GitHub Actions & GitHub Pages</h1>
-  <p>Fully Automated Deployment — No Local Setup Required</p>
+    🚀 DevOps CI/CD Pipeline Demo
+    <div class="subtitle">GitHub Actions • GitHub Pages • Automated Deployment</div>
 </header>
 
-<section>
+<div class="container">
 
-  <div class="card">
-    <h2>Hello from CI/CD! 👋</h2>
-    <p>
-      This website is automatically built and deployed using  
-      <strong>GitHub Actions</strong> → <strong>GitHub Pages</strong>.
-    </p>
-    <p>You simply push your code, and the pipeline does the rest!</p>
-  </div>
+    <div class="card">
+        <h2>Hello from CI/CD! 👋</h2>
+        <p>
+            This project demonstrates a fully automated DevOps pipeline using 
+            <strong>GitHub Actions</strong> and <strong>GitHub Pages</strong>.  
+            Every time code is pushed to the <b>main</b> branch, it triggers:
+        </p>
+        <ul>
+            <li>🔍 Code checkout</li>
+            <li>🧪 CI validation</li>
+            <li>🚀 Automatic deployment</li>
+        </ul>
+    </div>
 
-  <div class="card">
-    <h2>📌 What This Project Demonstrates</h2>
-    <ul>
-      <li>Automated CI/CD pipeline using GitHub Actions</li>
-      <li>Deploying static websites to GitHub Pages</li>
-      <li>Zero local setup — everything runs in cloud</li>
-      <li>Perfect example for DevOps or portfolio projects</li>
-    </ul>
-  </div>
+    <div class="card">
+        <h2>What This Project Shows</h2>
+        <ul>
+            <li>✔ Complete CI/CD workflow in the cloud</li>
+            <li>✔ Zero local setup — no Docker, no terminal needed</li>
+            <li>✔ Static website deployed automatically</li>
+            <li>✔ A perfect DevOps portfolio project</li>
+        </ul>
+    </div>
 
-  <div class="card">
-    <h2>📁 Tech Used</h2>
-    <ul>
-      <li>GitHub Actions</li>
-      <li>GitHub Pages</li>
-      <li>HTML / CSS</li>
-    </ul>
-  </div>
+    <div class="card">
+        <h2>Tech Used</h2>
+        <ul>
+            <li>⚙️ GitHub Actions</li>
+            <li>🌐 GitHub Pages</li>
+            <li>📄 HTML + CSS</li>
+        </ul>
+    </div>
 
-</section>
+</div>
 
 <footer>
-  Built with ❤️ by <strong>Anugraha Manoharan</strong>
+    Built with ❤️ by <b>Anugraha Manoharan</b>
 </footer>
 
 </body>
