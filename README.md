@@ -1,24 +1,41 @@
-# 🚀 My CI/CD Demo – GitHub Actions + GitHub Pages
+# 🚀 DevOps CI/CD Pipeline Demo  
+### GitHub Actions • GitHub Pages • Automated Deployment
 
-This is a simple CI/CD project that automatically deploys a static website to **GitHub Pages** using **GitHub Actions**.
+This project demonstrates a **complete CI/CD pipeline** that automatically builds and deploys a static website using **GitHub Actions** and **GitHub Pages** — with **zero local setup** required.
 
-I built this to understand how cloud-based CI/CD works without using Docker or any local terminal commands.
-
----
-
-## 🌐 Live Website
-After successful deployment, your website URL will appear here:
-
-**Settings → Pages → URL**
+Every push to the **main** branch triggers the workflow and updates the live website instantly.
 
 ---
 
-## 🔧 What This Project Does
-- Automatically deploys the website on every push to **main**
-- Uses GitHub Actions as the CI/CD pipeline
-- Hosts the website using GitHub Pages
-- No manual deployment needed
+## 🌐 Live Website  
+🔗 **Your GitHub Pages Link:**  
+(Will appear after your first successful deployment in:  
+**Settings → Pages → Visit site**)
 
 ---
 
-## 📁 Files in This Project
+## ✅ Features of This Project
+
+### 🔹 CI/CD Workflow  
+- Automatic build triggered by GitHub Actions  
+- Runs validation steps  
+- Uploads artifacts  
+- Deploys to GitHub Pages  
+- 100% cloud-based — no Docker/no terminal needed  
+
+### 🔹 What You Learn  
+- How GitHub Actions works  
+- How automated deployment pipelines are created  
+- How to publish a website using GitHub Pages  
+- A clean DevOps project to add to LinkedIn or resume  
+
+---
+
+## 🛠️ Tech Stack
+- **GitHub Actions**
+- **GitHub Pages**
+- **HTML / CSS**
+
+---
+
+## 📁 Project Structure
