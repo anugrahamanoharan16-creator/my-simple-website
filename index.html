@@ -1,63 +1,26 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My CI/CD Website</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body { background:#f7f9fc; color:#111827; }
-    .hero { padding:6rem 1rem; text-align:center; }
-    .card { box-shadow: 0 6px 18px rgba(15,23,42,0.06); border:0; }
-    footer { padding:2rem 0; text-align:center; color:#6b7280; }
-  </style>
+    <title>My CI/CD Demo</title>
 </head>
 <body>
-  <header class="container">
-    <nav class="d-flex justify-content-between align-items-center py-3">
-      <h4 class="m-0">My CI/CD Demo</h4>
-      <small class="text-muted">GitHub Actions • GitHub Pages</small>
-    </nav>
-  </header>
+    <h1>My CI/CD Demo</h1>
+    <h3>GitHub Actions • GitHub Pages</h3>
 
-  <main class="hero">
-    <div class="container">
-      <div class="card p-4 mx-auto" style="max-width:820px;">
-        <h1 class="display-6">Hello from CI/CD! 🚀</h1>
-        <p class="lead">This site is automatically deployed using GitHub Actions and GitHub Pages. No local Docker or terminal needed. </p>
+    <p>Hello from CI/CD! 🚀</p>
 
-        <div class="row mt-4">
-          <div class="col-md-6">
-            <h6>What this project shows</h6>
-            <ul>
-              <li>Automated build & deploy with GitHub Actions </li>
-              <li>Simple static website on GitHub Pages</li>
-              <li>Workflow badge + README for a clean portfolio</li>
-            </ul>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <a href="#" class="btn btn-outline-primary" id="demoLink">View Live Demo</a>
-            <p class="mt-2 text-muted small">(Your Pages URL appears in Settings → Pages after first successful deploy)</p>
-          </div>
-        </div>
-      </div>
+    <p>This site is automatically deployed using GitHub Actions and GitHub Pages.<br>
+    No local Docker or terminal needed.</p>
 
-      <div class="mt-4 text-muted small">Built by <strong>Your Name</strong></div>
-    </div>
-  </main>
+    <h2>What this project shows</h2>
+    <ul>
+        <li>Automated build & deploy with GitHub Actions</li>
+        <li>Simple static website on GitHub Pages</li>
+        <li>Workflow badge + README for a clean portfolio</li>
+    </ul>
 
-  <footer>
-    <div class="container">Made with ❤️ using GitHub Actions • <span id="pagesUrl"></span></div>
-  </footer>
+    <p><i>(Your Pages URL appears in Settings → Pages after first successful deploy)</i></p>
 
-  <script>
-    // auto-fill demo link with guessed pages URL (replace with real if you know it)
-    const username = "anugrahamanoharan16-creator";
-    const repo = "docker-hello-ci"; // change if your repo name is different
-    const live = `https://${username}.github.io/${repo}/`;
-    document.getElementById('demoLink').href = live;
-    document.getElementById('pagesUrl').textContent = live;
-  </script>
+    <p>Built by Anugraha Manoharan</p>
 </body>
 </html>
-
