@@ -1,43 +1,31 @@
-name: Deploy Website CI/CD
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 
+    branches:
       - main
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Quick smoke test: check index contains "CI/CD"
-        run: |
-          if ! grep -qi "CI/CD" index.html; then
-            echo "Smoke test failed: index.html does not contain CI/CD"
-            exit 1
-          fi
-          echo "Smoke test passed"
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          path: .
+          node-version: '16'
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      - name: Install dependencies
+        run: npm install
 
-    steps:
+      - name: Build project
+        run: npm run build
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
