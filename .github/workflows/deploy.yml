@@ -16,11 +16,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Quick smoke test: check index contains "CI/CD"
+        run: |
+          if ! grep -qi "CI/CD" index.html; then
+            echo "Smoke test failed: index.html does not contain CI/CD"
+            exit 1
+          fi
+          echo "Smoke test passed"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
