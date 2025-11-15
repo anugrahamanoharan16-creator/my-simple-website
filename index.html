@@ -1,93 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CI/CD Demo – GitHub Actions</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f9;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 850px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #222;
-        }
-        h3 {
-            text-align: center;
-            color: #555;
-        }
-        ul {
-            background: #f0f4ff;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        footer {
-            margin-top: 30px;
-            text-align: center;
-            font-size: 14px;
-            color: #555;
-        }
-        .highlight {
-            background: #e9ffe9;
-            padding: 10px;
-            border-left: 4px solid #28a745;
-            margin: 20px 0;
-        }
-        .emoji {
-            font-size: 22px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD Demo — GitHub Actions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background: #24292e;
+      color: white;
+      padding: 30px 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+      text-align: left;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+    footer {
+      margin: 30px 0;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>🚀 CI/CD Demo Project</h1>
-    <h3>Using GitHub Actions + GitHub Pages</h3>
+<header>
+  <h1>🚀 CI/CD Demo using GitHub Actions & GitHub Pages</h1>
+  <p>Fully Automated Deployment — No Local Setup Required</p>
+</header>
 
-    <div class="highlight">
-        <p><strong>Hello!</strong> This webpage is automatically deployed through a full CI/CD pipeline built with GitHub Actions.</p>
-        <p>No local Docker, no terminal — everything happens in the cloud. 🌐</p>
-    </div>
+<section>
 
-    <h2>🔧 What This Project Demonstrates</h2>
-    <ul>
-        <li>✔ Automated build & deploy workflow using GitHub Actions</li>
-        <li>✔ Static website hosted on GitHub Pages</li>
-        <li>✔ CI validation before deployment</li>
-        <li>✔ Perfect mini-project for DevOps portfolio</li>
-    </ul>
-
-    <h2>📌 How It Works</h2>
+  <div class="card">
+    <h2>Hello from CI/CD! 👋</h2>
     <p>
-        Every time I push changes to the <strong>main</strong> branch:
+      This website is automatically built and deployed using  
+      <strong>GitHub Actions</strong> → <strong>GitHub Pages</strong>.
     </p>
+    <p>You simply push your code, and the pipeline does the rest!</p>
+  </div>
+
+  <div class="card">
+    <h2>📌 What This Project Demonstrates</h2>
     <ul>
-        <li>GitHub Actions checks out the repo</li>
-        <li>Runs basic validation (CI)</li>
-        <li>Deploys the website to <strong>GitHub Pages (gh-pages branch)</strong></li>
+      <li>Automated CI/CD pipeline using GitHub Actions</li>
+      <li>Deploying static websites to GitHub Pages</li>
+      <li>Zero local setup — everything runs in cloud</li>
+      <li>Perfect example for DevOps or portfolio projects</li>
     </ul>
+  </div>
 
-    <h2>📄 Project URL</h2>
-    <p>
-        You can find this site's live URL in your GitHub Repository:<br>
-        <strong>Settings → Pages</strong>
-    </p>
+  <div class="card">
+    <h2>📁 Tech Used</h2>
+    <ul>
+      <li>GitHub Actions</li>
+      <li>GitHub Pages</li>
+      <li>HTML / CSS</li>
+    </ul>
+  </div>
 
-    <footer>
-        Built by <strong>Anugraha Manoharan</strong> • DevOps Learner & Cloud Enthusiast ☁️
-    </footer>
-</div>
+</section>
+
+<footer>
+  Built with ❤️ by <strong>Anugraha Manoharan</strong>
+</footer>
 
 </body>
 </html>
